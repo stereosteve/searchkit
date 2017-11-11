@@ -32,7 +32,8 @@
     "test": "jest -c jest.json",
     "test:watch": "jest -c jest.json --watch",
     "test:coverage": "jest -c jest.json --coverage",
-    "test:ci": "TEST_REPORT_FILENAME=unit-results.xml jest -c jest.json --coverage --testResultsProcessor=jest-junit-reporter --forceExit --ci -w 2"
+    "test:ci": "TEST_REPORT_FILENAME=unit-results.xml jest -c jest.json --coverage --testResultsProcessor=jest-junit-reporter --forceExit --ci -w 2",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "authors": [
     {
@@ -67,6 +68,7 @@
     "react-dom": "^15.0.0-0 || ^16.0.0-0"
   },
   "devDependencies": {
+    "@storybook/react": "^3.2.15",
     "@types/enzyme": "^2.8.11",
     "@types/jest": "^21.1.2",
     "@types/node": "^8.0.34",
